@@ -1,0 +1,16 @@
+<!-- <div class="alert alert-info" > -->
+
+<div class="card text-bg-secondary mb-3" style="max-width: 18rem;"*ngFor="let u of users">
+    <div class="card-header">id:{{u.id}}</div>
+    <div class="card-body">
+      <h5 class="card-title">Name: {{u.name}}</h5>
+    
+      <p>email: <a class="link-primary"routerLinkActive="active"[routerLink]="['/users',u.id]">{{u.email}}</a></p>
+    </div>
+  </div>
+
+
+  
+
+    <!-- <input type="button" value="Details" class="btn btn-outline-dark" (click)=" myService.GetUserByID()"> -->
+  
